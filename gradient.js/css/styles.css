@@ -3,11 +3,18 @@ body, html {
     margin: 0;
 }
 
-gradientDiv {
-
+#gradientContainer {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
 }
 
-colorDiv {
+#gradientDiv {
+    position: absolute
+}
+
+#colorDiv {
     position: absolute;
     width: 50%;
     height: 100%;
