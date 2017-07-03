@@ -13,7 +13,7 @@
         <div id="gradientDiv"></div>
     </div>
 
-    <div id="colorDiv"></div>
+    <div id="colorDiv"> ColorDiv </div>
 
 
     <script>
@@ -21,7 +21,7 @@
         var gradient = new Gradient(document.getElementById('gradientDiv'), 4);
         var colorDiv = document.getElementById('colorDiv');
 
-        gradient.onchange = function() {
+        gradient.onChange = function() {
             colorDiv.style.background = this.colorToString();
         }
 
