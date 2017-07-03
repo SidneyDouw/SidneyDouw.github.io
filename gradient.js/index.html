@@ -5,7 +5,7 @@
 
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 
-	<script type="text/javascript" src="js/gradient.js"></script>
+	<script type="text/javascript" src="js/gradient.min.js"></script>
 </head>
 <body>
 
@@ -18,7 +18,12 @@
 
     <script>
     
-        var gradient = new Gradient(document.getElementById('gradientDiv'), 4)
+        var gradient = new Gradient(document.getElementById('gradientDiv'), 4);
+        var colorDiv = document.getElementById('colorDiv');
+
+        gradient.onchange = function() {
+            colorDiv.style.background = this.colorToString();
+        }
 
     </script>
 
