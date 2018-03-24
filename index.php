@@ -4,8 +4,10 @@
 	<title>SidneyDouw GitHub</title>
 </head>
 <body>
-
-	<p> <? echo "Hello World!" ?> </p>
+	
+<?php 
+echo "Hello World!";
+?>
 
 </body>
 </html>
