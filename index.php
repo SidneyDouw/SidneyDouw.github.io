@@ -5,7 +5,7 @@
 </head>
 <body>
 
-	<p> <? echo "Hello World!"; ?> </p>
+	<p> <? echo "Hello World!" ?> </p>
 
 </body>
 </html>
