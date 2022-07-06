@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'BundesSans';
+  src: url('/fonts/BundesSans/BundesSansWeb-Regular.woff') format('woff'), url('/fonts/BundesSans/BundesSansWeb-Regular.ttf') format('truetype'), url('/fonts/BundesSans/BundesSansWeb-Regular.eot') format('embedded-opentype');
+}
+@font-face {
+  font-family: 'BundesSans';
+  src: url('/fonts/BundesSans/BundesSansWeb-Bold.woff') format('woff'), url('/fonts/BundesSans/BundesSansWeb-Bold.ttf') format('truetype'), url('/fonts/BundesSans/BundesSansWeb-Bold.eot') format('embedded-opentype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'BundesSans';
+  src: url('/fonts/BundesSans/BundesSansWeb-Italic.woff') format('woff'), url('/fonts/BundesSans/BundesSansWeb-Italic.ttf') format('truetype'), url('/fonts/BundesSans/BundesSansWeb-Italic.eot') format('embedded-opentype');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'BundesSans';
+  src: url('/fonts/BundesSans/BundesSansWeb-BoldItalic.woff') format('woff'), url('/fonts/BundesSans/BundesSansWeb-BoldItalic.ttf') format('truetype'), url('/fonts/BundesSans/BundesSansWeb-BoldItalic.eot') format('embedded-opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'BundesSerif';
+  src: url('/fonts/BundesSerif/BundesSerifWeb-Regular.eot') format('woff'), url('/fonts/BundesSerif/BundesSerifWeb-Regular.ttf') format('truetype'), url('/fonts/BundesSerif/BundesSerifWeb-Regular.eot') format('embedded-opentype');
+}
+@font-face {
+  font-family: 'BundesSerif';
+  src: url('/fonts/BundesSerif/BundesSerifWeb-Bold.woff') format('woff'), url('/fonts/BundesSerif/BundesSerifWeb-Bold.ttf') format('truetype'), url('/fonts/BundesSerif/BundesSerifWeb-Bold.eot') format('embedded-opentype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'BundesSerif';
+  src: url('/fonts/BundesSerif/BundesSerifWeb-Italic.eot') format('woff'), url('/fonts/BundesSerif/BundesSerifWeb-Italic.ttf') format('truetype'), url('/fonts/BundesSerif/BundesSerifWeb-Italic.eot') format('embedded-opentype');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'BundesSerif';
+  src: url('/fonts/BundesSerif/BundesSerifWeb-BoldItalic.woff') format('woff'), url('/fonts/BundesSerif/BundesSerifWeb-BoldItalic.ttf') format('truetype'), url('/fonts/BundesSerif/BundesSerifWeb-BoldItalic.eot') format('embedded-opentype');
+  font-weight: bold;
+  font-style: italic;
+}

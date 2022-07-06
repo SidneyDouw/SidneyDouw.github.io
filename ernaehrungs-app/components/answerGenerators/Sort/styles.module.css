@@ -1,0 +1,26 @@
+.answerContainer {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+.answerItemContainer {
+  display: grid;
+  grid-template-columns: auto 30px;
+  line-height: 20px;
+  font-weight: bold;
+  background-color: white;
+  user-select: none;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  padding: 20px 30px;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+.answerItemContainer.hidden {
+  opacity: 0;
+}
+.answerItemContainer img {
+  width: 100%;
+  margin: 10px;
+}

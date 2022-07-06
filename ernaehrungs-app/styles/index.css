@@ -1,0 +1,229 @@
+/**
+ * Global Reset of all HTML Elements
+ *
+ */
+html,
+body {
+  border: 0;
+  font-family: 'Helvetica-Neue', 'Helvetica', Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+@font-face {
+  font-family: 'BundesSans';
+  src: url('/fonts/BundesSans/BundesSansWeb-Regular.woff') format('woff'), url('/fonts/BundesSans/BundesSansWeb-Regular.ttf') format('truetype'), url('/fonts/BundesSans/BundesSansWeb-Regular.eot') format('embedded-opentype');
+}
+@font-face {
+  font-family: 'BundesSans';
+  src: url('/fonts/BundesSans/BundesSansWeb-Bold.woff') format('woff'), url('/fonts/BundesSans/BundesSansWeb-Bold.ttf') format('truetype'), url('/fonts/BundesSans/BundesSansWeb-Bold.eot') format('embedded-opentype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'BundesSans';
+  src: url('/fonts/BundesSans/BundesSansWeb-Italic.woff') format('woff'), url('/fonts/BundesSans/BundesSansWeb-Italic.ttf') format('truetype'), url('/fonts/BundesSans/BundesSansWeb-Italic.eot') format('embedded-opentype');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'BundesSans';
+  src: url('/fonts/BundesSans/BundesSansWeb-BoldItalic.woff') format('woff'), url('/fonts/BundesSans/BundesSansWeb-BoldItalic.ttf') format('truetype'), url('/fonts/BundesSans/BundesSansWeb-BoldItalic.eot') format('embedded-opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'BundesSerif';
+  src: url('/fonts/BundesSerif/BundesSerifWeb-Regular.eot') format('woff'), url('/fonts/BundesSerif/BundesSerifWeb-Regular.ttf') format('truetype'), url('/fonts/BundesSerif/BundesSerifWeb-Regular.eot') format('embedded-opentype');
+}
+@font-face {
+  font-family: 'BundesSerif';
+  src: url('/fonts/BundesSerif/BundesSerifWeb-Bold.woff') format('woff'), url('/fonts/BundesSerif/BundesSerifWeb-Bold.ttf') format('truetype'), url('/fonts/BundesSerif/BundesSerifWeb-Bold.eot') format('embedded-opentype');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'BundesSerif';
+  src: url('/fonts/BundesSerif/BundesSerifWeb-Italic.eot') format('woff'), url('/fonts/BundesSerif/BundesSerifWeb-Italic.ttf') format('truetype'), url('/fonts/BundesSerif/BundesSerifWeb-Italic.eot') format('embedded-opentype');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'BundesSerif';
+  src: url('/fonts/BundesSerif/BundesSerifWeb-BoldItalic.woff') format('woff'), url('/fonts/BundesSerif/BundesSerifWeb-BoldItalic.ttf') format('truetype'), url('/fonts/BundesSerif/BundesSerifWeb-BoldItalic.eot') format('embedded-opentype');
+  font-weight: bold;
+  font-style: italic;
+}
+:root {
+  --app-height: 100%;
+  --current-background-color: #a3d4d2;
+}
+html,
+body {
+  background-color: #eee;
+  font-family: 'BundesSans';
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'BundesSans';
+  font-style: italic;
+  font-weight: bold;
+}
+h2 {
+  font-size: 40px;
+  line-height: 40px;
+}
+p {
+  font-size: 20px;
+  line-height: 20px;
+}
+.textbox {
+  margin: 0px auto;
+  width: calc(80% - (15px*2));
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+.hint {
+  margin: 0px auto;
+  width: calc(80% - (15px*2));
+  font-size: 18px;
+}
+.boxshadow {
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+}
+.dottedBackground {
+  background-image: radial-gradient(black 20%, transparent 25%), radial-gradient(black 20%, transparent 25%);
+  background-size: 10px 10px;
+  background-position: 0 0, 15px 15px;
+}
+.question_buttonContainer {
+  display: grid;
+  grid-template-columns: 30% auto;
+}
+.ctaButton {
+  font-family: 'BundesSans';
+  font-weight: bold;
+  display: block;
+  width: calc(80% - (10px*2));
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: white;
+  border: 2px solid #d10339;
+  color: #d10339;
+  font-size: 30px;
+  line-height: 30px;
+  transition: color 0.3s ease, border 0.3s ease, opacity 0.3s ease;
+}
+.ctaButton.disabled {
+  pointer-events: none;
+  opacity: 0.75;
+  color: #9c3852;
+  border-color: #9c3852;
+}

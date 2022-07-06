@@ -1,0 +1,37 @@
+.imageContainer {
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 6px 10px;
+}
+.imageContainer.small {
+  grid-template-columns: 80%;
+  justify-content: center;
+}
+.imageContainer div {
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+.imageContainer div.hidden {
+  opacity: 0;
+}
+.imageContainer div img {
+  border: 5px solid transparent;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: -5px;
+  cursor: pointer;
+  transition: border 0.3s ease;
+}
+.imageContainer div.active img {
+  border: 5px solid #d10339;
+}
+.imageAnswerText {
+  position: relative;
+  width: calc(90%);
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 16px;
+}

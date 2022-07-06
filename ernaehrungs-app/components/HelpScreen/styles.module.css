@@ -1,0 +1,49 @@
+.helpScreen {
+  min-height: var(--app-height);
+  background-color: #a3d4d2;
+  display: grid;
+  grid-template-rows: auto 80px 80px;
+}
+.helpScreen .textbox {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  margin: 60px auto;
+  text-align: center;
+  z-index: 2;
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+.helpScreen .textbox.hidden {
+  opacity: 0;
+  transform: translateY(5%);
+}
+.helpScreen .textbox h2,
+.helpScreen .textbox p {
+  margin: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.helpScreen .textbox img {
+  margin: 10px 0;
+  max-width: 60%;
+}
+.helpScreen .dottedBackground {
+  grid-column: 1;
+  grid-row: 2 / span 2;
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+.helpScreen .dottedBackground.hidden {
+  opacity: 0;
+}
+.helpScreen button {
+  grid-column: 1;
+  grid-row: 3;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: opacity 500ms ease;
+}
+.helpScreen button.hidden {
+  opacity: 0;
+}

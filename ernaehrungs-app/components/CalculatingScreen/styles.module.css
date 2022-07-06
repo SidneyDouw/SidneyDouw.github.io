@@ -1,0 +1,114 @@
+.calculatingScreen {
+  min-height: var(--app-height);
+  background-color: #fee061;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: fit-content(0) auto auto;
+}
+.logo {
+  grid-column: 1 / span 2;
+  padding-left: 10px;
+  padding-top: 20px;
+  max-width: 100%;
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+.logo.hidden {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+.progressBar {
+  position: relative;
+  margin: 20px auto 80px auto;
+  width: 3px;
+  background-color: #a30339;
+  color: #a30339;
+  z-index: 2;
+  transition: all 500ms ease;
+}
+.progressBar.hidden {
+  opacity: 0;
+  transform: translateX(20px);
+}
+.progressBar::before {
+  content: '';
+  box-sizing: border-box;
+  display: block;
+  width: 13px;
+  height: 13px;
+  margin-left: -5px;
+  margin-top: -6.5px;
+  border-radius: 6.5px;
+  background-color: #a30339;
+}
+.progressBar::after {
+  content: '';
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  bottom: -6.5px;
+  width: 13px;
+  height: 13px;
+  margin-left: -5px;
+  border-radius: 6.5px;
+  background-color: #a30339;
+}
+.progressBar div {
+  box-sizing: content-box;
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: -11px;
+  margin-left: 29.5px;
+  border-radius: 11px;
+  border: 1px solid #a30339;
+  text-align: center;
+}
+.progressBar div::before {
+  content: '';
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 29px;
+  border-top: 1px dashed #a30339;
+  margin-left: -30px;
+  margin-top: 9.5px;
+}
+.progressBar div::after {
+  content: '';
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 13px;
+  height: 13px;
+  border-radius: 6.5px;
+  border: 3px solid #a30339;
+  background-color: #fee061;
+  margin-left: -35px;
+  margin-top: -16px;
+}
+.animation {
+  padding: 0px 40px 60px 40px;
+  max-width: 80%;
+  justify-self: right;
+  align-self: center;
+  transition: all 500ms ease;
+}
+.animation.hidden {
+  opacity: 0;
+}
+.dottedBackground {
+  grid-column: 1 / span 2;
+  transition: opacity 500ms ease;
+}
+.dottedBackground.hidden {
+  opacity: 0;
+}
+.dottedBackground div {
+  transform: translateY(-50%);
+  transition: transform 500ms ease;
+  max-height: 40px;
+}
+.dottedBackground div.hidden {
+  transform: translateY(0);
+}
